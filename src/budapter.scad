@@ -8,9 +8,9 @@ Adapts existing JHead/RepRapFab-compatible extruder, such as Wade's or Greg Fros
 
 h = 10;
 d = 16;
-fw = 3.5;
+fw = 3.6;
 rnd = 2;
-nippleheight = 3;
+nippleheight = 5.2;
 
 module dooschdapter() {
   difference() {
@@ -21,10 +21,14 @@ module dooschdapter() {
           rotate([0, 0, 90]) cylinder(r = d / 2 - 0.1, h = rnd, center=false, $fn=24);
 		  translate([0, 0, 0]) sphere(d / 2, $fn=100);
       }
-    translate([0, 0, h])
-    cylinder(r1 = d / 3.5, r2 = fw / 2 + 1, h = nippleheight, center = false, $fn=24);
+      translate([0, 0, h]) {
+        difference() {
+          cylinder(r1 = 4.2, r2 = fw / 2 + 0.1, h = nippleheight, center = false, $fn=24);
+          translate([-d / 2, -d / 2, nippleheight - 1]) cube([d, d, d]);
+        }
+      }
     }
-  rotate([0, 0, 90]) cylinder(r = fw / 2, h = h * 3, center=true, $fn=24);
+  rotate([0, 0, 90]) cylinder(r = fw / 2, h = h * 4, center=true, $fn=24);
   }
 }
 
