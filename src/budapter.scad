@@ -10,17 +10,19 @@ h = 10;
 d = 16;
 fw = 3.6;
 rnd = 2;
-nippleheight = 5.2;
+nippleheight = 3.2;
 
 module dooschdapter() {
   difference() {
     union() {
+      // base
       rotate([0, 0, 90]) cylinder(r = d / 2 - 0.1, h = h - rnd, center=false, $fn=24);
       translate([0, 0, h - rnd])
       intersection() {
           rotate([0, 0, 90]) cylinder(r = d / 2 - 0.1, h = rnd, center=false, $fn=24);
 		  translate([0, 0, 0]) sphere(d / 2, $fn=100);
       }
+      // nipple
       translate([0, 0, h]) {
         difference() {
           cylinder(r1 = 4.2, r2 = fw / 2 + 0.1, h = nippleheight, center = false, $fn=24);
@@ -28,6 +30,7 @@ module dooschdapter() {
         }
       }
     }
+  // filament hole
   rotate([0, 0, 90]) cylinder(r = fw / 2, h = h * 4, center=true, $fn=24);
   }
 }
