@@ -10,7 +10,7 @@ h = 10;
 d = 16;
 fw = 3.6;
 rnd = 2;
-nippleheight = 3.2;
+nippleheight = 3.5;
 
 module dooschdapter() {
   difference() {
@@ -25,7 +25,7 @@ module dooschdapter() {
       // nipple
       translate([0, 0, h]) {
         difference() {
-          cylinder(r1 = 4.2, r2 = fw / 2 + 0.1, h = nippleheight, center = false, $fn=24);
+          cylinder(r1 = 3.7, r2 = fw / 2 + 0.1, h = nippleheight, center = false, $fn=24);
           translate([-d / 2, -d / 2, nippleheight - 1]) cube([d, d, d]);
         }
       }
