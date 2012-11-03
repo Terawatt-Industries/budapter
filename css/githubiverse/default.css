@@ -96,3 +96,7 @@ body #sourcedownloads a.btn,
 	body #sourcedownloads a.btn:hover {
   background-color: #efefef;
 }
+
+body #sourcedownloads a.btn:hover {
+	color: #00a5d5;
+}
