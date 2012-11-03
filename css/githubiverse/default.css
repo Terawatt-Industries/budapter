@@ -91,3 +91,8 @@ body .nav > li > a:hover {
   text-decoration: none;
   background-color: #00a5d5;
 }
+
+body #sourcedownloads a.btn, 
+	body #sourcedownloads a.btn:hover {
+  background-color: #efefef;
+}
