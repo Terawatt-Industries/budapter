@@ -190,7 +190,7 @@
           var fileGithubUrl = githubRepo.html_url + '/blob/' + content.branchName + '/' + content.path;
           var rawFileURL = githubRepo.html_url + '/raw/' + content.branchName + '/' + content.path;
           $('#sources').append("<li><a href='" + fileGithubUrl + "' target='_githubiverse' title='View in Github' class=\"srcfile\">"+ dirname + content.name + "</a></li>");
-          $('#sourcedownloads').append("<li><a class='btn-small btn-inverse' href='" + rawFileURL + "' download='" + content.name + "'><i class='icon-download-alt icon-white'></i>&nbsp;Download</a></li>");
+          $('#sourcedownloads').append("<li><a class='btn-small btn' href='" + rawFileURL + "' download='" + content.name + "'><i class='icon-download-alt icon-white'></i>&nbsp;Download</a></li>");
         }
 
         function addSTLDir(dir, dirname){
@@ -226,7 +226,7 @@
           var rawFileURL = githubRepo.html_url + '/raw/' + content.branchName + '/' + content.path;
           $('#stls').append("<li><a href=\"javascript://\" title='Preview' class=\"stlfile\">"+ dirname + content.name+"</a></li>")
           $('.stlfile').last().data("githubFile",content);
-          $('#stldownloads').append("<li><a class='btn-small btn-inverse' href='" +  rawFileURL + "' download='" + content.name + "'><i class='icon-download-alt icon-white'></i>&nbsp;Download</a></li>");
+          $('#stldownloads').append("<li><a class='btn-small btn' href='" +  rawFileURL + "' download='" + content.name + "'><i class='icon-download-alt icon-white'></i>&nbsp;Download</a></li>");
         }
 
         function loadStlString(githubFile){
