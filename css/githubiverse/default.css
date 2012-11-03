@@ -86,3 +86,8 @@ header hr {
 #lead-image-container {
 	margin: 5px;
 }
+
+body .nav > li > a:hover {
+  text-decoration: none;
+  background-color: #00a5d5;
+}
