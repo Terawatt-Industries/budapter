@@ -93,10 +93,13 @@ body .nav > li > a:hover {
 }
 
 body #sourcedownloads a.btn, 
-	body #sourcedownloads a.btn:hover {
+	body #sourcedownloads a.btn:hover,
+	body #stldownloads a.btn, 
+	body #stldownloads a.btn:hover {
   background-color: #efefef;
 }
 
-body #sourcedownloads a.btn:hover {
+body #sourcedownloads a.btn:hover,
+	body #stldownloads a.btn:hover {
 	color: #00a5d5;
 }
