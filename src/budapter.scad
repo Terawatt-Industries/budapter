@@ -10,7 +10,7 @@ h = 10;
 d = 16;
 fw = 3.6;
 rnd = 2;
-nippleheight = 3.5;
+nippleheight = 3;
 
 module dooschdapter() {
   difference() {
