@@ -9,7 +9,7 @@ Adapts existing JHead/RepRapFab-compatible extruder, such as Wade's or Greg Fros
 $fn = 100;
 
 h = 9.5;
-d = 15.75;
+d = 17.75;
 fw = 3.5;
 rnd = 2;
 nippleheight = 0;
